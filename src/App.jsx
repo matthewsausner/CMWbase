@@ -14,7 +14,7 @@ import Tour from './Pages/tour.jsx'
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
-      <Route path="/" element={<Home />} /> 
+      <Route path="/" element={<Home />}/> 
       <Route path="/store" element={<Store />}/>
       <Route path="/links" element={<Links />}/>
       <Route path="/tour" element={<Tour />}/>
