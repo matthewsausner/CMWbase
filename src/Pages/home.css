@@ -42,31 +42,31 @@ input{
 
 @media all and (min-width:769px) and (max-width: 800px) {
   img{
-    max-width: 50%;
+    max-width: 32%;
   }
 }
 
 @media all and (min-width:569px) and (max-width: 768px) {
   img{
-    max-width: 50%;
+    max-width: 32%;
   }
 }
 
 @media all and (min-width:481px) and (max-width: 568px) {
   img{
-    max-width: 60%;
+    max-width: 40%;
   }
 }
 
 @media all and (min-width:321px) and (max-width: 480px) {
   img{
-    max-width: 65%;
+    max-width: 40%;
   }
 }
 
 @media all and (min-width:0px) and (max-width: 320px) {
   img{
-    max-width: 70%;
+    max-width: 50%;
   }
 }
 .container_row{
