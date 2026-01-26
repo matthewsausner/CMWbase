@@ -8,14 +8,27 @@ html, body {
     overflow: hidden;   /* Hides any content that overflows the container and disables scrollbars */
 }
 img{
-  max-width: 40%; /* Ensures the image doesn't exceed its container's width */
+  max-width: 35%; /* Ensures the image doesn't exceed its container's width */
   height: auto;    /* Automatically adjusts the height to maintain the aspect ratio */
   margin: 0 auto;
 }
 input{
-  z-index:0;
+  z-index:-1;
   max-width: 100%; /* Ensures the image doesn't exceed its container's width */
   height: 100px;    /* Automatically adjusts the height to maintain the aspect ratio */
+}
+
+@media all and (min-width:0px) and (max-width: 700px) {
+  img{
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    max-width: 50%; /* Ensures the image doesn't exceed its container's width */
+    height: auto;    /* Automatically adjusts the height to maintain the aspect ratio */
+    margin: 0 auto;
+  }
 }
 .container_row{
   display: grid;
@@ -23,7 +36,6 @@ input{
   grid-template-areas: 'overlap';
 }
 .image_container {
-  z-index:-1;
   grid-column: 1;
   grid-row: 1;
   grid-area: overlap
@@ -41,26 +53,22 @@ input{
 .store_link {
   grid-row-start: 1;
   grid-row: 1;
+  z-index:2;
 }
 .links_link {
   grid-row-start: 2;
   grid-row: 2;
+  z-index:2;
 }
 .tour_link {
   grid-row-start: 3;
   grid-row: 3;
+  z-index:2;
 }
 
 button{
   background-color: transparent;
   color: red;
-}
-.site_header {
-  transform: scale(0.4);
-  position: fixed; /* Keeps the header fixed to the viewport */
-  top: 0;          /* Positions it at the very top */
-  background-color: transparent; /* Add a background color so content doesn't show through */
-  z-index: -1;   /* Ensures the header is layered above other elements */
 }
 
 

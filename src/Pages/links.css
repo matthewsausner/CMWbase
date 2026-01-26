@@ -1,0 +1,13 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+html, body {
+    height: 100%;       /* Ensures the elements take up the full viewport height */
+    overflow: hidden;   /* Hides any content that overflows the container and disables scrollbars */
+}
+
+.message {
+	padding-top: 20%;
+}

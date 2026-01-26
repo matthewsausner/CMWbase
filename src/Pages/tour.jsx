@@ -1,10 +1,12 @@
 import React from 'react'
-
+import Header from '../Components/Header.jsx'
+import './tour.css'
 
 const Tour = () => {
 	return(
 		<>
-			<h1> tour </h1>
+			<Header />
+			<h2 className="message"> {"Tour page coming soon <3 Claire 26.1.26"} </h2>
 		</>
 	)
 }

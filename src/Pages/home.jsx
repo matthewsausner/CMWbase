@@ -1,10 +1,10 @@
 
 import React from 'react'
 import spliffsStill from '../assets/spliffs_still.jpg'
-import header from '../assets/name.png'
 import store from '../assets/store.png'
 import links from '../assets/links.png'
 import tour from '../assets/tour.png'
+import Header from '../Components/Header.jsx'
 import './home.css'
 import { useNavigate } from 'react-router-dom'
 
@@ -21,9 +21,7 @@ const Home = () => {
 	}
 	return(
 		<>
-			<header className="site_header">
-			  <img src={header} alt="header" />
-			</header>
+			<Header />
 			<div className="container_row">
 				<div className="image_container">
 				  <img src={spliffsStill} alt="homePage" />

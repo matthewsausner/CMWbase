@@ -1,10 +1,12 @@
 import React from 'react'
-
+import Header from '../Components/Header.jsx'
+import './links.css'
 
 const Links = () => {
 	return(
 		<>
-			<h1> links </h1>
+			<Header />
+			<h2> links </h2>
 		</>
 	)
 }

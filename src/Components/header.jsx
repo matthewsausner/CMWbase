@@ -1,10 +1,24 @@
 import React from 'react'
 
+import header from '../assets/name.png'
+import './Header.css'
+import { useNavigate } from 'react-router-dom'
 
 const Header = () => {
+	const navigate = useNavigate();
+	const handleHomeNav = () => {
+		navigate('/')
+	}
 	return(
 		<>
-			<h1> Header </h1>
+			<header className="site_header">
+				<input 
+					type="image"
+					onClick={handleHomeNav}
+					src={header} 
+					alt="header" 
+				/>
+			</header>
 		</>
 	)
 }

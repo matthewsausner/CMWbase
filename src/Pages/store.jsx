@@ -1,10 +1,12 @@
 import React from 'react'
-
+import Header from '../Components/Header.jsx'
+import './store.css'
 
 const Store = () => {
 	return(
 		<>
-			<h1> store </h1>
+			<Header />
+			<h2 className="message"> {"Store coming soon <3 Claire 26.1.26"} </h2>
 		</>
 	)
 }

@@ -1,0 +1,6 @@
+.site_header {
+	transform: scale(0.4);
+	top: 0;          
+	background-color: transparent; 
+	z-index: 3;
+}
