@@ -18,16 +18,55 @@ input{
   height: 100px;    /* Automatically adjusts the height to maintain the aspect ratio */
 }
 
-@media all and (min-width:0px) and (max-width: 700px) {
-  img{
+@media all and (min-width:0px) and (max-width: 800px) {
+  .image_container{
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     -o-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
-    max-width: 50%; /* Ensures the image doesn't exceed its container's width */
     height: auto;    /* Automatically adjusts the height to maintain the aspect ratio */
     margin: 0 auto;
+  }
+}
+@media all and (min-width:960px) and (max-width: 1024px) {
+  img{
+    max-width: 40%;
+  }
+}
+@media all and (min-width:801px) and (max-width: 959px) {
+  img{
+    max-width: 40%;
+  }
+}
+
+@media all and (min-width:769px) and (max-width: 800px) {
+  img{
+    max-width: 50%;
+  }
+}
+
+@media all and (min-width:569px) and (max-width: 768px) {
+  img{
+    max-width: 50%;
+  }
+}
+
+@media all and (min-width:481px) and (max-width: 568px) {
+  img{
+    max-width: 60%;
+  }
+}
+
+@media all and (min-width:321px) and (max-width: 480px) {
+  img{
+    max-width: 65%;
+  }
+}
+
+@media all and (min-width:0px) and (max-width: 320px) {
+  img{
+    max-width: 70%;
   }
 }
 .container_row{
@@ -66,9 +105,5 @@ input{
   z-index:2;
 }
 
-button{
-  background-color: transparent;
-  color: red;
-}
 
 
