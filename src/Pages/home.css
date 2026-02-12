@@ -29,14 +29,33 @@ input{
     margin: 0 auto;
   }
 }
+@media all and (min-width:1024px)  {
+  img{
+    max-width: 40%;
+  }
+  .mix_link{
+    top: 70px;
+    right: 190px;
+  }
+
+}
 @media all and (min-width:960px) and (max-width: 1024px) {
   img{
     max-width: 40%;
   }
+  .mix_link{
+    top: 75px;
+    right: 150px;
+  }
+
 }
 @media all and (min-width:801px) and (max-width: 959px) {
   img{
     max-width: 40%;
+  }
+  .mix_link{
+    top: 65px;
+    right: 150px;
   }
 }
 
@@ -44,11 +63,19 @@ input{
   img{
     max-width: 32%;
   }
+  .mix_link{
+    top: 65px;
+    right: 150px;
+  }
 }
 
 @media all and (min-width:569px) and (max-width: 768px) {
   img{
     max-width: 32%;
+  }
+  .mix_link{
+    top: 75px;
+    right: 100px;
   }
 }
 
@@ -56,17 +83,29 @@ input{
   img{
     max-width: 40%;
   }
+  .mix_link{
+    top: 75px;
+    right: 50px;
+  }
 }
 
 @media all and (min-width:321px) and (max-width: 480px) {
   img{
     max-width: 40%;
   }
+  .mix_link{
+    top: 5px;
+    right: 120px;
+  }
 }
 
 @media all and (min-width:0px) and (max-width: 320px) {
   img{
     max-width: 50%;
+  }
+  .mix_link{
+    top: 5px;
+    right: 5px;
   }
 }
 .container_row{
@@ -103,6 +142,11 @@ input{
   grid-row-start: 3;
   grid-row: 3;
   z-index:2;
+}
+.mix_link {
+  z-index:3;
+  grid-area: overlap;
+  position: fixed;
 }
 
 

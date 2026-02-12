@@ -10,6 +10,7 @@ import Home from './Pages/home.jsx'
 import Store from './Pages/store.jsx'
 import Links from './Pages/links.jsx'
 import Tour from './Pages/tour.jsx'
+import Mix from './Pages/mix.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -18,6 +19,7 @@ const router = createBrowserRouter(
       <Route path="/store" element={<Store />}/>
       <Route path="/links" element={<Links />}/>
       <Route path="/tour" element={<Tour />}/>
+      <Route path="/mix" element={<Mix />}/>
     </>
   )
 )

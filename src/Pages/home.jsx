@@ -4,6 +4,7 @@ import spliffsStill from '../assets/spliffs_still.jpg'
 import store from '../assets/store.png'
 import links from '../assets/links.png'
 import tour from '../assets/tour.png'
+import mix from '../assets/mix.png'
 import Header from '../Components/Header.jsx'
 import './home.css'
 import { useNavigate } from 'react-router-dom'
@@ -19,10 +20,20 @@ const Home = () => {
 	const handleTourNav = () => {
 		navigate('/tour')
 	}
+	const handleMixNav = () => {
+		navigate('/mix')
+	}
 	return(
 		<>
 			<Header />
 			<div className="container_row">
+				<div className="mix_link">
+			      <input 
+			      	type="image" 
+			      	onClick={handleMixNav} 
+			      	src={mix} 
+			      	alt="mix button"/>
+			    </div>
 				<div className="image_container">
 				  <img src={spliffsStill} alt="homePage" />
 				</div>
