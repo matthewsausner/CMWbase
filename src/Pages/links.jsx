@@ -20,15 +20,19 @@ const Links = () => {
 					<img className="link bc" src={bc} alt="bandcamp" />
 				</a>
 				<br/>
-				<img className="link tidal" src={tidal} alt="tidal" />
-				<a href="https://open.spotify.com/artist/5jTmDxDsCR5NBzi2YEVIB6?si=Eld-CPvTRVuYjG_Z_gx-Ng">
+				<a href="https://tidal.com/artist/72118232/u">
+					<img className="link tidal" src={tidal} alt="tidal" />
+				</a>
+				<a href="https://open.spotify.com/artist/1P9UC5P9jgvMwxPLOthD2z?si=xL_wTuKkQqSj0U4411NT4Q">
 					<img className="link spotify" src={spotify} alt="spotify" />
 				</a>
 				<br/>
 				<a href="https://www.youtube.com/@clrsmthn">
 					<img className="link yt" src={yt} alt="yt" />
 				</a>
-				<img className="link apple" src={apple} alt="apple" />
+				<a href="https://music.apple.com/us/artist/claire-something/1863999210">
+					<img className="link apple" src={apple} alt="apple" />
+				</a>
 			</div>
 		</>
 	)
