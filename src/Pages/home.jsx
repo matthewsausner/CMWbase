@@ -1,6 +1,6 @@
 
 import React from 'react'
-import spliffsStill from '../assets/spliffs_still.jpg'
+import spliffsStill from '../assets/spliffs_still_small.jpg'
 import store from '../assets/store.png'
 import links from '../assets/links.png'
 import tour from '../assets/tour.png'
