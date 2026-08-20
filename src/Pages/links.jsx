@@ -7,6 +7,7 @@ import tidal from '../assets/tidal.png'
 import spotify from '../assets/spotify.png'
 import yt from '../assets/yt.png'
 import apple from '../assets/apple.png'
+import tiktok from '../assets/tiktok.png'
 
 const Links = () => {
 	return(
@@ -32,6 +33,10 @@ const Links = () => {
 				</a>
 				<a href="https://music.apple.com/us/artist/claire-something/1863999210">
 					<img className="link apple" src={apple} alt="apple" />
+				</a>
+				<br/>
+				<a href="https://www.tiktok.com/@clrsmthn">
+					<img className="link tiktok" src={tiktok} alt="tiktok" />
 				</a>
 			</div>
 		</>
