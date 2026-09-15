@@ -1,6 +1,9 @@
 .site_header {
 	transform: scale(0.4);
-	top: 0;          
 	background-color: transparent; 
 	z-index: 3;
+}
+.hamburger{
+  margin-top: 5%;
+  margin-left: 5%;
 }

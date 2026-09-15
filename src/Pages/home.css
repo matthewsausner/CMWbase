@@ -4,20 +4,26 @@
   text-align: center;
 }
 html, body {
-    height: 100%;       /* Ensures the elements take up the full viewport height */
-    overflow: hidden;   /* Hides any content that overflows the container and disables scrollbars */
-}
-img{
-  max-width: 35%; /* Ensures the image doesn't exceed its container's width */
-  height: auto;    /* Automatically adjusts the height to maintain the aspect ratio */
-  margin: 0 auto;
+    height: 100%;       
+    overflow: hidden;   
 }
 input{
   z-index:-1;
-  max-width: 100%; /* Ensures the image doesn't exceed its container's width */
-  height: 100px;    /* Automatically adjusts the height to maintain the aspect ratio */
+  max-width: 100%; 
+  height: 100px;    
 }
-
+@media all and (min-width:801px) and (max-width: 2000px) {
+  .image_container{
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    height: auto;    
+    margin: 0 auto;
+    margin-top: 10%;
+  }
+}
 @media all and (min-width:0px) and (max-width: 800px) {
   .image_container{
     -webkit-transform: rotate(90deg);
@@ -25,13 +31,14 @@ input{
     -o-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
-    height: auto;    /* Automatically adjusts the height to maintain the aspect ratio */
+    height: auto;    
     margin: 0 auto;
+    margin-top: 17%;
   }
 }
 @media all and (min-width:1024px)  {
   img{
-    max-width: 40%;
+    max-width: 55%;
   }
   .mix_link{
     top: 70px;
@@ -41,7 +48,7 @@ input{
 }
 @media all and (min-width:960px) and (max-width: 1024px) {
   img{
-    max-width: 40%;
+    max-width: 55%;
   }
   .mix_link{
     top: 75px;
@@ -51,7 +58,7 @@ input{
 }
 @media all and (min-width:801px) and (max-width: 959px) {
   img{
-    max-width: 40%;
+    max-width: 55%;
   }
   .mix_link{
     top: 65px;
@@ -61,7 +68,7 @@ input{
 
 @media all and (min-width:769px) and (max-width: 800px) {
   img{
-    max-width: 32%;
+    max-width: 85%;
   }
   .mix_link{
     top: 65px;
@@ -71,27 +78,27 @@ input{
 
 @media all and (min-width:569px) and (max-width: 768px) {
   img{
-    max-width: 32%;
+    max-width: 90%;
   }
   .mix_link{
-    top: 75px;
-    right: 100px;
+    top: 65px;
+    right:90px;
   }
 }
 
 @media all and (min-width:481px) and (max-width: 568px) {
   img{
-    max-width: 40%;
+    max-width: 90%;
   }
   .mix_link{
-    top: 75px;
-    right: 50px;
+    top: 50px;
+    right: 25px;
   }
 }
 
 @media all and (min-width:321px) and (max-width: 480px) {
   img{
-    max-width: 40%;
+    max-width: 90%;
   }
   .mix_link{
     top: 5px;
@@ -101,37 +108,38 @@ input{
 
 @media all and (min-width:0px) and (max-width: 320px) {
   img{
-    max-width: 50%;
+    max-width: 90%;
   }
   .mix_link{
     top: 5px;
     right: 5px;
   }
 }
+.header_container{
+  grid-area: overlap;
+  place-items: center;
+}
 .container_row{
   display: grid;
   place-items: center;
-  grid-template-areas: 'overlap';
 }
 .image_container {
   grid-column: 1;
-  grid-row: 1;
-  grid-area: overlap
-
+  grid-row: 2;
+  grid-area: overlap;
+  z-index: 0;
 }
 .links_container {
-  grid-column: 1;
-  grid-row: 1;
-  grid-area: overlap
+  grid-area: overlap;
 }
 .links_grid {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 2fr 2fr 2fr;
 }
 .store_link {
   grid-row-start: 1;
   grid-row: 1;
-  z-index:2;
+  z-index:1;
 }
 .links_link {
   grid-row-start: 2;

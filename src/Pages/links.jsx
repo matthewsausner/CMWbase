@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Header from '../Components/Header.jsx'
 import './links.css'
 import bc from '../assets/bc.png'
@@ -10,6 +10,7 @@ import apple from '../assets/apple.png'
 import tiktok from '../assets/tiktok.png'
 
 const Links = () => {
+	const [isVisible, setIsVisible] = useState(false);
 	return(
 		<>
 			<Header />
