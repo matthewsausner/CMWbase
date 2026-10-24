@@ -9,10 +9,8 @@ html, body {
 }
 input{
   z-index:-1;
-  max-width: 100%; 
-  height: 100px;    
 }
-@media all and (min-width:801px) and (max-width: 2000px) {
+@media all and (min-width:481px) and (max-width: 2000px) {
   .image_container{
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
@@ -21,10 +19,13 @@ input{
     transform: rotate(90deg);
     height: auto;    
     margin: 0 auto;
-    margin-top: 10%;
+    margin-top: 15%;
+  }
+  input{
+      height:100px;
   }
 }
-@media all and (min-width:0px) and (max-width: 800px) {
+@media all and (min-width:0px) and (max-width: 480px) {
   .image_container{
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
@@ -35,6 +36,31 @@ input{
     margin: 0 auto;
     margin-top: 17%;
   }
+  input{
+      height:100px;
+  }
+}
+@media all and (min-width:0px) and (max-width: 480px) {
+  img{
+    max-width: 195%;
+  }
+  input{
+    height:190px; 
+  }
+  .container_row{
+    margin-top:-30px;
+  }
+  .header_container{
+    height:80px;
+    margin-top: 20px;
+  }
+  .mix_link{
+    top:20px;
+    left: 160px;
+  }
+  .links_grid{
+    height:320px;
+  }
 }
 @media all and (min-width:1024px)  {
   img{
@@ -42,7 +68,10 @@ input{
   }
   .mix_link{
     top: 70px;
-    right: 190px;
+    right: 320px;
+  }
+  .container_row{
+    margin-top:-60px;
   }
 
 }
@@ -52,23 +81,28 @@ input{
   }
   .mix_link{
     top: 75px;
-    right: 150px;
+    right: 220px;
   }
-
+  .container_row{
+    margin-top:-50px;
+  }
 }
 @media all and (min-width:801px) and (max-width: 959px) {
   img{
-    max-width: 55%;
+    max-width: 60%;
   }
   .mix_link{
     top: 65px;
     right: 150px;
   }
+  .container_row{
+    margin-top:-40px;
+  }
 }
 
 @media all and (min-width:769px) and (max-width: 800px) {
   img{
-    max-width: 85%;
+    max-width: 65%;
   }
   .mix_link{
     top: 65px;
@@ -95,24 +129,27 @@ input{
     right: 25px;
   }
 }
-
-@media all and (min-width:321px) and (max-width: 480px) {
+@media all and (min-width:0px) and (max-width: 480px) {
   img{
-    max-width: 90%;
+    max-width: 195%;
+  }
+  input{
+    height:190px; 
+  }
+  .container_row{
+    margin-top:-90px;
+  }
+  .header_container{
+    height:80px;
+    margin-top: 20px;
   }
   .mix_link{
-    top: 5px;
-    right: 120px;
+    top:20px;
+    right:-105px;
+    transform: scale(0.7);
   }
-}
-
-@media all and (min-width:0px) and (max-width: 320px) {
-  img{
-    max-width: 90%;
-  }
-  .mix_link{
-    top: 5px;
-    right: 5px;
+  .links_grid{
+    height:320px;
   }
 }
 .header_container{

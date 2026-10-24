@@ -8,10 +8,26 @@ html, body {
     overflow: hidden;   /* Hides any content that overflows the container and disables scrollbars */
 }
 .link {
-	max-width: 10%;
+	max-width: 45%;
+}
+@media all and (min-width:801px) and (max-width: 2000px) {
+  .link {
+    max-width: 12%;
+  }
+}
+@media all and (min-width:481px) and (max-width: 800px) {
+  .link {
+    max-width: 15%;
+  }
+}
+@media all and (min-width:0px) and (max-width: 480px) {
+  .link {
+    max-width: 45%;
+  }
 }
 .header_container{
   place-items: center;
+  height: 120px;
 }
 .hamburger{
   float: left;
