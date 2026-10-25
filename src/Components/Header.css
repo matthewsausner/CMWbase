@@ -1,18 +1,21 @@
-@media all and (min-width:0px) and (max-width: 480px) {
-	.site_header{
-		height: 40px;
-		transform: scale(0.4);
-	}
+/*grid shit*/
+.site_header {
+	background-color: transparent; 
+	z-index: 3;
 }
+
+/*desktop*/
 @media all and (min-width:481px) and (max-width: 2000px) {
 	.site_header{
 		height: 80px;
 		transform: scale(0.5);
 	}
 }
-.site_header {
-	
-	background-color: transparent; 
-	z-index: 3;
-	
+
+/*mobile*/
+@media all and (min-width:0px) and (max-width: 480px) {
+	.site_header{
+		height: 40px;
+		transform: scale(0.4);
+	}
 }
